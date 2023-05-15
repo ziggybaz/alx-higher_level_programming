@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 def print_reversed_list_integer(my_list=[]):
-    reverse_copy = my_list.reverse()
-    if reverse_copy != None:
-        for i in reverse_copy:
-            print("{:d}".format(i))
+    if not my_list:
+        pass
+    else:
+        x = len(my_list) - 1
+        while x >= 0:
+            print("{:d}".format(my_list[x]))
+            x -= 1
